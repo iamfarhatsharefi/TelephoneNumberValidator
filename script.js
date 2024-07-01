@@ -9,17 +9,10 @@ document.getElementById('check-btn').addEventListener('click', () => {
 
     const validPhonePatterns = [
         /^1?[-.\s]?(\d{3})[-.\s]?(\d{3})[-.\s]?(\d{4})$/,
-        /^1?[-.\s]?(\(\d{3}\))[-.\s]?(\d{3})[-.\s]?(\d{4})$/
+        /^1?[-.\s]?(\(\d{3}\))[-.\s]?(\d{3})[-.\s]?(\d{4})$/,
     ];
 
-    let isValid = false;
-
-    for (const pattern of validPhonePatterns) {
-        if (pattern.test(userInput)) {
-            isValid = true;
-            break;
-        }
-    }
+    const isValid = validPhonePatterns.some((pattern) => pattern.test(userInput));
 
     if (isValid) {
         resultsDiv.textContent = `Valid US number: ${userInput}`;

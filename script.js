@@ -1,3 +1,4 @@
+
 document.getElementById('check-btn').addEventListener('click', () => {
     const userInput = document.getElementById('user-input').value;
     const resultsDiv = document.getElementById('results-div');
@@ -23,10 +24,10 @@ document.getElementById('check-btn').addEventListener('click', () => {
 
     if (isValid) {
         resultsDiv.textContent = `Valid US number: ${userInput}`;
-        resultsDiv.style.color = '#8bc34a';  
+        resultsDiv.style.color = '#8bc34a';  // Green color for valid number
     } else {
         resultsDiv.textContent = `Invalid US number: ${userInput}`;
-        resultsDiv.style.color = '#f44336';
+        resultsDiv.style.color = '#f44336';  // Red color for invalid number
     }
 });
 

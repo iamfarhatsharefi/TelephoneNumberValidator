@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background: url('crop.jpg') no-repeat center center fixed;
+  background: url('background.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
   display: flex;
@@ -80,6 +80,7 @@ button:hover {
   animation: fadeInUp 1s ease-in-out;
 }
 
+/* Keyframe animations */
 @keyframes fadeIn {
   from {
       opacity: 0;
@@ -110,7 +111,6 @@ button:hover {
       transform: translateY(0);
   }
 }
-
 
 @media (max-width: 768px) {
   .container {

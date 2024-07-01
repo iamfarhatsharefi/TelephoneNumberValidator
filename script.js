@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // Regular expression to validate US phone numbers
         const validPhonePattern = /^(1\s?)?(\(\d{3}\)|\d{3})[\s.-]?\d{3}[\s.-]?\d{4}$/;
 
         if (validPhonePattern.test(userInput)) {

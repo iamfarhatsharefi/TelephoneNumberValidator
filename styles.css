@@ -80,7 +80,6 @@ button:hover {
   animation: fadeInUp 1s ease-in-out;
 }
 
-/* Keyframe animations */
 @keyframes fadeIn {
   from {
     opacity: 0;

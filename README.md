@@ -10,7 +10,7 @@ This project is a simple and interactive web application designed to validate US
 
 ## Demo 📸
 [Live Demo](   )
-![Screenshot]()
+![Screenshot](/Picture3.png)
 
 ## Technologies Used 🛠️
 

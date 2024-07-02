@@ -1,15 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const userInput = document.getElementById('user-input');
-    const checkBtn = document.getElementById('check-btn');
-    const clearBtn = document.getElementById('clear-btn');
-    const resultsDiv = document.getElementById('results-div');
+  const userInput = document.getElementById('user-input');
+  const checkBtn = document.getElementById('check-btn');
+  const clearBtn = document.getElementById('clear-btn');
+  const resultsDiv = document.getElementById('results-div');
   
-    checkBtn.addEventListener('click', () => {
-      const phoneNumber = userInput.value.trim();
+  checkBtn.addEventListener('click', () => {
+    const phoneNumber = userInput.value.trim();
   
-      if (!phoneNumber) {
-        // eslint-disable-next-line no-alert
-        alert('Please provide a phone number');
+    if (!phoneNumber) {
+      alert('Please provide a phone number');
         return;
       }
   

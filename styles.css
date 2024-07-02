@@ -83,72 +83,72 @@ button:hover {
 /* Keyframe animations */
 @keyframes fadeIn {
   from {
-      opacity: 0;
+    opacity: 0;
   }
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 @keyframes fadeInDown {
   from {
-      opacity: 0;
-      transform: translateY(-20px);
+    opacity: 0;
+    transform: translateY(-20px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 @keyframes fadeInUp {
   from {
-      opacity: 0;
-      transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 @media (max-width: 768px) {
   .container {
-      width: 90%;
-      padding: 30px;
+    width: 90%;
+    padding: 30px;
   }
 
   h1 {
-      font-size: 2em;
+    font-size: 2em;
   }
 
   input {
-      padding: 10px;
-      font-size: 0.9em;
+    padding: 10px;
+    font-size: 0.9em;
   }
 
   button {
-      padding: 10px 20px;
-      font-size: 0.9em;
+    padding: 10px 20px;
+    font-size: 0.9em;
   }
 
   #results-div {
-      font-size: 1.2em;
+    font-size: 1.2em;
   }
 }
 
 @media (max-width: 480px) {
   h1 {
-      font-size: 1.5em;
+    font-size: 1.5em;
   }
 
   .button-group {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   button {
-      width: 100%;
-      padding: 10px;
-      font-size: 0.8em;
+    width: 100%;
+    padding: 10px;
+    font-size: 0.8em;
   }
 }

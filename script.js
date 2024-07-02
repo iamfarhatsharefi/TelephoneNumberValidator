@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-      const validPatterns = [
+    const validPatterns = [
       /^1?\s?\d{3}-\d{3}-\d{4}$/,
       /^1?\s?\(\d{3}\)\s?\d{3}-\d{4}$/,
       /^1?\s?\d{10}$/,
@@ -24,11 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultText = isValid
       ? `Valid US number: ${phoneNumber}`
       : `Invalid US number: ${phoneNumber}`;
-  
+
     resultsDiv.textContent = resultText;
   });
 
-    clearBtn.addEventListener('click', () => {
+  clearBtn.addEventListener('click', () => {
     resultsDiv.textContent = '';
     userInput.value = '';
   });

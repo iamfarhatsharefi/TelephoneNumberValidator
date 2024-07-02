@@ -1,37 +1,34 @@
-
-document.getElementById('check-btn').addEventListener('click', () => {
-    const userInput = document.getElementById('user-input').value;
+document.addEventListener('DOMContentLoaded', () => {
+    const userInput = document.getElementById('user-input');
+    const checkBtn = document.getElementById('check-btn');
+    const clearBtn = document.getElementById('clear-btn');
     const resultsDiv = document.getElementById('results-div');
+    const errorMessage = document.getElementById('error-message');
 
-    if (!userInput) {
-        alert('Please provide a phone number');
-        return;
-    }
+    checkBtn.addEventListener('click', () => {
+        const phoneNumber = userInput.value.trim();
 
-    const validPhonePatterns = [
-        /^1?[-.\s]?(\d{3})[-.\s]?(\d{3})[-.\s]?(\d{4})$/,
-        /^1?[-.\s]?(\(\d{3}\))[-.\s]?(\d{3})[-.\s]?(\d{4})$/
-    ];
-
-    let isValid = false;
-
-    for (const pattern of validPhonePatterns) {
-        if (pattern.test(userInput)) {
-            isValid = true;
-            break;
+        if (!phoneNumber) {
+            alert('Please provide a phone number');
+            return;
         }
-    }
 
-    if (isValid) {
-        resultsDiv.textContent = `Valid US number: ${userInput}`;
-        resultsDiv.style.color = '#8bc34a';  // Green color for valid number
-    } else {
-        resultsDiv.textContent = `Invalid US number: ${userInput}`;
-        resultsDiv.style.color = '#f44336';  // Red color for invalid number
-    }
+        const validPatterns = [
+            /^1?\s?\d{3}-\d{3}-\d{4}$/,
+            /^1?\s?\(\d{3}\)\s?\d{3}-\d{4}$/,
+            /^1?\s?\d{10}$/,
+            /^1?\s?\d{3}\s\d{3}\s\d{4}$/
+        ];
+
+        const isValid = validPatterns.some((pattern) => pattern.test(phoneNumber));
+        const resultText = isValid ? `Valid US number: ${phoneNumber}` : `Invalid US number: ${phoneNumber}`;
+
+        resultsDiv.textContent = resultText;
+    });
+
+    clearBtn.addEventListener('click', () => {
+        resultsDiv.textContent = '';
+        userInput.value = '';
+    });
 });
 
-document.getElementById('clear-btn').addEventListener('click', () => {
-    document.getElementById('results-div').textContent = '';
-    document.getElementById('user-input').value = '';
-});

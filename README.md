@@ -16,11 +16,35 @@ This project is a simple and interactive web application designed to validate US
 
 
 - HTML
-
+<body>
+    <div class="container">
+        <h1>Phone Number Validator</h1>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Enter phone number">
+            <div class="button-group">
+                <button id="check-btn">Check</button>
+                <button id="clear-btn">Clear</button>
+            </div>
 
 - CSS
 
--java script
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+- java script
+clearBtn.addEventListener('click', () => {
+    resultsDiv.textContent = '';
+    userInput.value = '';
+  });
+});
 
 ## Installation 💻
 

@@ -9,7 +9,7 @@ Phone Number Validator
 This project is a simple and interactive web application designed to validate US phone numbers. The application allows users to input a phone number and check its validity based on common US phone number formats. It provides immediate feedback on whether the entered phone number is valid or invalid.
 
 ## Demo 📸
-[Live Demo](   )
+[Live Demo](https://iamfarhatsharefi.github.io/TelephoneNumberValidator/)
 ![Screenshot](/Picture3.png)
 
 ## Technologies Used 🛠️

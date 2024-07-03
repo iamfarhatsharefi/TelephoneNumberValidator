@@ -154,3 +154,63 @@ button:hover {
     font-size: 0.8em;
   }
 }
+
+@media (max-width: 375px) {
+  .container {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 1.4em;
+  }
+  input {
+    padding: 8px;
+    font-size: 0.8em;
+  }
+  button {
+    padding: 8px 15px;
+    font-size: 0.8em;
+  }
+  #results-div {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 430px) {
+  .container {
+    padding: 25px;
+  }
+  h1 {
+    font-size: 1.6em;
+  }
+  input {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+  button {
+    padding: 10px 18px;
+    font-size: 0.9em;
+  }
+  #results-div {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 391px) and (max-width: 430px) {
+  .container {
+    padding: 25px;
+  }
+  h1 {
+    font-size: 1.7em;
+  }
+  input {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+  button {
+    padding: 10px 18px;
+    font-size: 0.9em;
+  }
+  #results-div {
+    font-size: 1.1em;
+  }
+}

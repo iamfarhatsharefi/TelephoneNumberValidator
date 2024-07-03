@@ -129,6 +129,10 @@ button:hover {
     font-size: 0.9em;
   }
 
+  .button-group {
+    flex-direction: column;
+  }
+
   button {
     padding: 10px 20px;
     font-size: 0.9em;
@@ -169,6 +173,10 @@ button:hover {
     font-size: 0.8em;
   }
 
+  .button-group {
+    flex-direction: column;
+  }
+
   button {
     padding: 8px 15px;
     font-size: 0.8em;
@@ -191,6 +199,10 @@ button:hover {
   input {
     padding: 10px;
     font-size: 0.9em;
+  }
+
+  .button-group {
+    flex-direction: column;
   }
 
   button {
